@@ -8,7 +8,7 @@ from ms_graph import generate_access_token, GRAPH_API_ENDPOINT
 from datetime import datetime
 
 DB_HOST = 'localhost'
-DB_USER = 'root'
+DB_USER = 'your_username'
 DB_PASSWORD = 'your_password'
 DB_NAME = 'your_database_name'
 
