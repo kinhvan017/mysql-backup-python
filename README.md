@@ -1,4 +1,6 @@
 # MySql Backup with Python 🐍
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=DONE&color=GREEN&style=for-the-badge)
+
 The Python Database Backup Script is a versatile and robust tool designed to simplify and automate the backup process for MySQL databases.
 
 ## Features 🚀
@@ -37,6 +39,26 @@ The Python Database Backup Script is a versatile and robust tool designed to sim
   MAX_BACKUP_AGE = 7
   ```
 
+## OneDrive Integration 🌐
+_[2024-1-28]_ - The script now supports automatic uploading of backups to OneDrive for secure remote storage. Follow the steps below to integrate OneDrive into your backup process.
+
+1. __Create a OneDrive App:__ Visit the Microsoft Azure Portal and create a new App Registration to obtain the App ID and Client Secret.
+
+2. __Configure OneDrive Integration:__
+```python
+APP_ID = 'your_one_drive_app_id'
+CLIENT_SECRET = 'your_one_drive_client_secret'
+SCOPES = ['Files.ReadWrite.All']
+```
+
+3. __Set OneDrive Folder ID:__ Obtain the ID of the OneDrive folder where you want to store backups and set it in the script.
+```python
+ONE_DRIVE_FOLDER_ID = 'your_one_drive_folder_id'
+```
+
+4. __Run the Script:__ Execute the script as usual, and after compressing the backup, it will be automatically uploaded to your specified OneDrive folder.
+Enjoy the enhanced security and accessibility of your database backups with OneDrive integration!
+
 ## Instructions 📝
 1. Adjust the configuration variables in the script to match your database and desired backup paths.
 
@@ -55,6 +77,8 @@ You can use [Windows Task Scheduler](https://www.jcchouinard.com/python-automati
 ## Next Features 🛠️
 - __Cloud Backup__
 
+  ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=DONE&color=GREEN&style=for-the-badge)
+  
   After completing the backup compression in .zip format, the script will be enhanced to allow automatic upload of the backup to a cloud platform such as OneDrive or a similar service. This will provide a comprehensive and secure solution for remote backup storage. Stay tuned for future updates and enjoy these additional features to enhance the efficiency and security of your backup process!
 
 ## Common Errors 🚨
