@@ -31,7 +31,7 @@ def create_backup():
     backup_file = f'{DB_NAME}-{current_time}.sql'
     backup_file_path = os.path.join(BACKUP_DIR, backup_file)
 
-    mysqldump_cmd = f'mysqldump -h {DB_HOST} -u {DB_USER} {DB_NAME} > {backup_file_path}'
+    mysqldump_cmd = f'mysqldump -h {DB_HOST} -u {DB_USER} -p{DB_PASSWORD} {DB_NAME} > {backup_file_path}'
 
     try:
         subprocess.run(mysqldump_cmd, shell=True, check=True)
