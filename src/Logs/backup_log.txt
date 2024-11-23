@@ -1,0 +1,2 @@
+2024-11-23 18:37:55,965 [ERROR]: Error creating backup: Command 'mysqldump -h 103.56.156.208 -u vnpt -pVnpt1234 vnptnhatramphutro > E:\code\mysql-backup-python\src\backups\vnptnhatramphutro-2024-11-23_18-37-55.sql' returned non-zero exit status 1.
+2024-11-23 18:38:09,446 [ERROR]: Error creating backup: Command 'mysqldump -h 103.56.156.208 -u vnpt -pVnpt1234@ vnptnhatramphutro > E:\code\mysql-backup-python\src\backups\vnptnhatramphutro-2024-11-23_18-38-09.sql' returned non-zero exit status 1.

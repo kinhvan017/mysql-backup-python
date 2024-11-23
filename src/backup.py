@@ -7,10 +7,10 @@ import requests
 from ms_graph import generate_access_token, GRAPH_API_ENDPOINT
 from datetime import datetime
 
-DB_HOST = 'localhost'
-DB_USER = 'your_username'
-DB_PASSWORD = 'your_password'
-DB_NAME = 'your_database_name'
+DB_HOST = '103.56.156.208'
+DB_USER = 'vnpt'
+DB_PASSWORD = 'xxxx'
+DB_NAME = 'vnptnhatramphutro'
 
 APP_ID = 'your_app_id'
 CLIENT_SECRET = 'your_client_secret'
